@@ -1,0 +1,25 @@
+<div class="jumbotron text-center">
+  <img src="https://kjsce.somaiya.edu/assets/kjsce/img/newlogo/KJSCE-Logo.svg" alt="KJSCE Logo" id = "Images">
+  <h1>Smart Farming using IoT</h1>
+  <p class="lead">Welcome to Smart Farming using IoT <br> developed by <br> Priyanka Sutaria - 1823018 <br>Gauri Pawar - 1822010 <br>Vishal Panchal - 1822002</p>
+  <div>
+    <a *ngIf = "!authService.loggedIn()" class="btn btn-primary" [routerLink]="['/register']">Register</a>
+    <a *ngIf = "!authService.loggedIn()" class="btn btn-primary" [routerLink]="['/login']">Login</a>
+    <a *ngIf = "authService.loggedIn()" class="btn btn-primary" [routerLink]="['/login']">Logout</a>
+  </div>
+</div>
+
+<div class = "row">
+  <div class="col-md-4">
+    <img src="../../../assets/collect3.png" alt="Collect Data" id = "Images">
+    <h1>Collect Data</h1>
+  </div>
+  <div class="col-md-4">
+    <img src="../../../assets/visualize2.png" alt="Visualize Data" id = "Images">
+    <h1>Visualize Data</h1>
+  </div>
+  <div class="col-md-4">
+    <img src="../../../assets/analyze3.png" alt="Analyze Data" id = "Images">
+    <h1>Analyze Data</h1>
+  </div>
+</div>
